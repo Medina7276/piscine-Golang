@@ -1,2 +1,2 @@
 #!/bin//sh
-echo "hello medina7276"  
+echo "Hello Medina7276!"  
