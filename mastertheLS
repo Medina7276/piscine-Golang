@@ -1,1 +1,3 @@
-ls -m -c --indicator-style=slash | tr -d ' '
+#!/bin/bash
+
+ls -p --sort=time | tr -s '\n' ',' | rev | cut -c 2- | rev
