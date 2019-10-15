@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ls -c -m --indicator-style=slash | tr -d ' '
+ls -m -c --indicator-style=slash | tr -d ' '
