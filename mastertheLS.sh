@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ls -pm --sort=time
+ls -c -m --indicator-style=slash | tr -d ' '
