@@ -1,4 +1,3 @@
-
 package piscine
 
 func PointOne(n *int) {
