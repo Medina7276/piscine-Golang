@@ -17,4 +17,3 @@ func IterativeFactorial(nb int) int {
 	return b
 
 }
- 
