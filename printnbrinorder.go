@@ -16,7 +16,7 @@ func IntToDigits(n int) (digits []int) {
 	return digits
 }
 
-func SortIntegerTable(table []int) []int {
+func sortIntegerTable(table []int) []int {
 	ln := 0
 	for _, i := range table {
 		if i == i {
@@ -39,7 +39,7 @@ func PrintNbrInOrder(n int) {
 	if n == 0 {
 		z01.PrintRune('0')
 	} else {
-		for _, c := range SortIntegerTable(IntToDigits(n)) {
+		for _, c := range sortIntegerTable(IntToDigits(n)) {
 			z01.PrintRune(rune(c) + '0')
 		}
 	}
