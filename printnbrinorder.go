@@ -44,22 +44,3 @@ func PrintNbrInOrder(n int) {
 		}
 	}
 }
-
-func PrintIntTable(digits []int32) {
-	for i := '0'; i <= '9'; i++ {
-		for _, digit := range digits {
-			if i == digit+48 {
-				z01.PrintRune(i)
-			}
-		}
-	}
-}
-
-func ArrLen(runes []int) int {
-	count := 0
-	for range runes {
-		count++
-	}
-
-	return count
-}
