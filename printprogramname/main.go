@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	runes := []rune(os.Args[0])
-	for _, letter := range runes {
+	runes := []rune(os.Args[0])    // casting - преобразование типов . перевод типов. Мы переводим строку в массив Рун,
+	for _, letter := range runes { // тк индекс нам не нужен мы его пропускаем (for _,) затем переводим массив Рун в символы
 		z01.PrintRune(letter)
 
 	}
