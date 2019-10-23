@@ -1,23 +1,12 @@
 package piscine
 
-func IsPrintable(str string) bool {
-	for range []rune(str) {
-		if contains(str, '\n') ||
-			contains(str, '\x00') ||
-			contains(str, '\t') {
-			return false
+func IsPrintable(fraza string) bool {
+	strbool := true
+	strRune := []rune(fraza)
+	for _, key := range strRune {
+		if key >= 0 && key <= 31 {
+			strbool = false
 		}
 	}
-
-	return true
-}
-
-func contains(s string, r rune) bool {
-	for _, ch := range []rune(s) {
-		if ch == r {
-			return true
-		}
-	}
-
-	return false
+	return strbool
 }
