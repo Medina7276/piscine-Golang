@@ -6,27 +6,21 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func main() {
-	len := 0
-	args := os.Args
-	for range args {
-		len++
+func ArrLen(Args []string) int {
+	var count int
+	for i := range Args {
+		count = i + 1
 	}
-	revargs := args
-	for i := 1; i < len; i++ {
-		revargs[i-1] = args[i]
-	}
-	for i, j := 0, len-1; i < j; i, j = i+1, j-1 {
-		args[i], args[j] = args[j], args[i]
-	}
-	for i := 1; i < len; i++ {
-		arg := revargs[i]
-		for _, letter := range arg {
-			z01.PrintRune(letter)
-		}
-		z01.PrintRune('\n')
-	}
-
+	return count
 }
 
-//klk
+func main() {
+	args := os.Args[1:]
+
+	for i := range args {
+		for _, j := range os.Args[ArrLen(args)-i] { //cause Args [] starts with 0
+			z01.PrintRune(j)
+		}
+		z01.PrintRune(10)
+	}
+}
