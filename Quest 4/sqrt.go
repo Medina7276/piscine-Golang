@@ -9,3 +9,11 @@ func Sqrt(nb int) int {                 //nb=16
 
 	return 0
 }
+/*SQRT.GO
+Write a function that returns the square root of the int passed as parameter 
+if that square root is a whole number. 
+Otherwise it returns 0.
+student@ubuntu:~/piscine-go/test$ ./test
+2
+0
+*
