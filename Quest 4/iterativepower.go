@@ -11,3 +11,9 @@ func IterativePower(nb int, power int) int {
 	}
 	return result
 }
+/*ITERATIVEPOWER.GO
+Write an iterative function that returns the power of the int passed as parameter.
+Negative powers will return 0. Overflows do not have to be dealt with.
+student@ubuntu:~/piscine-go/test$ ./test
+64 
+*
