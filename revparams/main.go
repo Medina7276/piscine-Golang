@@ -25,4 +25,15 @@ func main() {
 	}
 }
 
-//gf
+/*REVPARAMS/main.go
+Write a program that prints the arguments received in the command line in a reverse order.
+Example of output :
+go build
+./revparams choumi is the best cat
+
+cat
+best
+the
+is
+choumi*
+
