@@ -8,3 +8,8 @@ func ConcatParams(args []string) string {
 
 	return result
 }
+/* CONCATPARAMS.GO
+
+Write a function that takes the arguments
+received in parameters and returns them as a string.
+The arguments must be separated by a \n.*
