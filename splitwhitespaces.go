@@ -29,3 +29,8 @@ func SplitWhiteSpaces(str string) []string {
 	}
 	return ans
 }
+/* SPLITWHITESPACES.GO
+
+Write a function that separates the words of a string 
+and puts them in a string array.
+The separators are spaces, tabs and newlines.* 
